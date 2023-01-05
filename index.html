@@ -14,8 +14,8 @@
         <div class="form">
             <form class="form_content">
                 <fieldset class="fieldset">
-                    <label for="user">username</label>
-                    <input type="text" id="name" maxlength="255" pattern="[A-Za-z0-9- ]+" required>
+                    <label for="username">username</label>
+                    <input type="text" id="username" maxlength="40" pattern="[A-Za-z0-9- ]+" required>
                     <br><br>
                     <button class="submit button">submit</button><br>
                 </fieldset>
@@ -26,11 +26,18 @@
         
         <!-- left side -->
         <div class="result">
-            <div class="prediction_card">
+            <div class="user_info">
                 <fieldset class="fieldset">
+                    <legend class="header">user information</legend>
+                    <div class="avatar"></div>
+                    <div class="full_name"></div>
+                    <div class="blog_address"></div>
+                    <div class="location"></div>
+                    <div class="bio"></div>
                 </fieldset>
             </div>
         </div>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
