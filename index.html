@@ -9,6 +9,28 @@
     <link rel="icon" type="image/png" href="./images/logo.png" />
 </head>
 <body>
-    
+    <div class="transparent">
+        <!-- right side -->
+        <div class="form">
+            <form class="form_content">
+                <fieldset class="fieldset">
+                    <label for="user">username</label>
+                    <input type="text" id="name" maxlength="255" pattern="[A-Za-z0-9- ]+" required>
+                    <br><br>
+                    <button class="submit button">submit</button><br>
+                </fieldset>
+            </form>
+            <div class="action_result"></div>
+        </div>
+
+        
+        <!-- left side -->
+        <div class="result">
+            <div class="prediction_card">
+                <fieldset class="fieldset">
+                </fieldset>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
