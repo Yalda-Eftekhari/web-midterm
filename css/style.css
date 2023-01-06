@@ -1,0 +1,80 @@
+/*  
+    Add a background image with a relative path that covers the whole screen.
+*/
+body {
+    background: url("../images/background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+/* 
+    Add a transparent box with a width of 50% and a min-height of 60%.
+    it is positioned fixed and always stays in the same place even if the page is scrolled
+    it should be centered and have a border radius of 10px.
+    it has a background color of rgba(222, 222, 222, 0.581) and a padding of 5px.
+    display: flex; defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+    justify-content aligns the flexible container's items when the items do not use all available space on the main-axis
+ */
+.transparent {
+    width: 50%;
+    min-height: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(222, 222, 222, 0.581);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* 
+    Add a header with a font size of 30px, a font weight of 500 and a color of rgb(9, 75, 69).
+    It should be positioned relative and have a margin of 10px.
+    relative means that the element is positioned relative to its normal position.
+*/
+.header {
+    position: relative;
+    color: rgb(9, 75, 69);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* 
+    fieldset should have a padding of 10px and a border radius of 10px.
+*/
+.fieldset {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* 
+    setting button properties like width, height, text-align, margin, background-color, color and border-radius.
+*/
+.button {
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    margin: 5px;
+    background-color:  rgb(9, 75, 69);
+    color: white;
+    border-radius: 10px;
+}
+/* 
+    wrapper helps the page to be flexible with different screen sizes.
+*/
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+/* 
+    setting avatar properties
+*/
+.avatar{
+    width: 70%;
+    min-height: 80%;
+    top: 80%;
+    left: 80%;
+}
