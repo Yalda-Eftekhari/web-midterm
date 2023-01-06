@@ -1,8 +1,6 @@
 // setting the variables to connect to the html
 const nameInput = document.querySelector('#username');
 const submitButton = document.querySelector('.submit');
-const saveButton = document.querySelector('.save');
-const clearButton = document.querySelector('.clear');
 const avatar = document.querySelector('.avatar');
 const full_name = document.querySelector('.full_name');
 const blog = document.querySelector('.blog_address');
@@ -36,7 +34,8 @@ async function getInfo(e) {
             window.localStorage.setItem(username, JSON.stringify(obj));
         }
     } catch (e) {
-        alerting("An Error Occured");
+        if(e.message == "NetworkError when attempting to fetch resource.")
+            alerting("Network Error")
     }
 }
 
